@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="#000"
+        android:elevation="15dp"
+        android:id="@+id/mainToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/captha"
+                            android:id="@+id/cp1"
+                            />
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/logo_f"
+                            android:id="@+id/cp2"
+                            />
+
+
+                    </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_marginRight="14dp"
+                       android:layout_toLeftOf="@+id/right_line"
+                       android:layout_gravity="center_vertical"
+                       android:orientation="vertical"
+                      android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:textSize="11sp"
+                           android:textAllCaps="true"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Job Credit"
+                           android:textColor="#AFAFAF"
+                           android:textStyle="bold"
+                           android:textAlignment="center"
+                           />
+                       <TextView
+                           android:id="@+id/main_CoinTv"
+                           android:textSize="17sp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="i0"
+                           android:textColor="#FF9900"
+                           android:textStyle="bold"
+                           android:textAlignment="center"
+                           />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:id="@+id/right_line"
+                       android:layout_marginRight="20dp"
+                       android:layout_alignParentEnd="true"
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:textSize="11sp"
+                           android:textAllCaps="true"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Balance"
+                           android:textColor="#AFAFAF"
+                           android:textStyle="bold"
+                           android:textAlignment="center"
+                           />
+                       <TextView
+                           android:id="@+id/main_DollerTv"
+                           android:textSize="17sp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="$0"
+                           android:textColor="#00B879"
+                           android:textStyle="bold"
+                           android:textAlignment="center"
+                           />
+                   </LinearLayout>
+           </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/mainToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/profileDetailsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/main_UserProfileImage"
+                            android:layout_marginTop="7dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/profile"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#DB2CBE"
+                            />
+                        <TextView
+                            android:id="@+id/main_UserNameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:layout_marginTop="8dp"
+                            android:text="Alisa Khan"
+                            android:textColor="#FFC400"
+                            />
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:text="Verified"
+                            android:textColor="#00D28B"
+                            android:drawableRight="@drawable/check"
+                            android:drawablePadding="4dp"
+                           android:layout_marginBottom="7dp"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/walletButton"
+                            android:layout_marginRight="30dp"
+                            android:minWidth="70dp"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/button_bg"
+                            android:text="Wallet"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            />
+                        <Button
+                            android:layout_marginRight="30dp"
+                            android:minWidth="70dp"
+                            android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                           android:text="Cashback"
+                            android:background="@drawable/button_bg"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            />
+                        <Button
+                            android:id="@+id/profileButton"
+                           android:minWidth="70dp"
+                            android:textSize="14sp"
+                            android:paddingLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                           android:text="Profile"
+                            android:background="@drawable/button_bg"
+                            android:textAllCaps="false"
+                            android:textColor="#fff"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+               android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:id="@+id/searchCard"
+                app:cardElevation="7dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/profileDetailsCard"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="10dp"
+                    android:hint="Search Your Dream Job"
+                    android:textAlignment="center"
+                    android:drawableRight="@drawable/job"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/searchCard"
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageButton
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/job_search"
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Trending Job"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#BEBEBE"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/line2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                  <androidx.cardview.widget.CardView
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="20dp"
+                        android:id="@+id/captchaCard"
+                      android:layout_marginBottom="25dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Captcha Job"
+                                android:textColor="#FFC400"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                />
+
+                            <ImageView
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/captha"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <Button
+                                android:minWidth="80dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/button_bg2"
+                                android:text="Apply"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginBottom="15dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="25dp"
+                            android:id="@+id/videoCard"
+                        app:cardCornerRadius="15dp"
+                            app:cardElevation="10dp"
+                           android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18sp"
+                                    android:text="Video Job"
+                                    android:textColor="#FFC400"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    />
+
+                                <ImageView
+                                    android:layout_marginBottom="25dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/video"
+                                    android:layout_gravity="center_horizontal"
+                                    />
+                                <Button
+                                    android:minWidth="80dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/button_bg2"
+                                    android:text="Apply"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="15dp"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/hourlyCaptchaCard"
+                        android:layout_marginBottom="25dp"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginRight="20dp"
+                            app:cardElevation="10dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="200dp">
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18sp"
+                                    android:text="Pro Captcha"
+                                    android:textColor="#FFC400"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    />
+
+                                <ImageView
+                                    android:layout_marginBottom="25dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/captha"
+                                    android:layout_gravity="center_horizontal"
+                                    />
+                                <Button
+                                    android:minWidth="80dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/button_bg2"
+                                    android:text="Apply"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="15dp"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/premiumCaptchaCard"
+                        android:layout_marginBottom="25dp"
+                           app:cardCornerRadius="15dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            app:cardElevation="10dp"
+                           android:layout_height="200dp">
+                            <LinearLayout
+                                android:padding="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:text="Premium Captcha"
+                                    android:textColor="#FFC400"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    />
+
+                                <ImageView
+                                    android:layout_marginBottom="25dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/captha"
+                                    android:layout_gravity="center_horizontal"
+                                    />
+                                <Button
+                                    android:minWidth="80dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/button_bg2"
+                                    android:text="Apply"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="15dp"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

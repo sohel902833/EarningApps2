@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/captcha"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/captha"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/logo"
+
+        />
+   <ImageView
+      android:id="@+id/logo"
+       android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo_f"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+       android:scaleType="fitXY"
+       android:layout_marginBottom="50dp"
+        />
+
+
+    <Button
+        android:minWidth="120dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg3"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginTop="15dp"
+        android:id="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/endLine"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/endLine"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue With accept our"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textColor="#FEE400"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoFinalActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="#FFFFFF"
+        android:id="@+id/mainToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back_icon"
+                android:tint="#000"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/win"
+        android:layout_below="@+id/mainToolbarId"
+        />
+    <LinearLayout
+        android:layout_above="@id/below_line1"
+        android:orientation="vertical"
+        android:layout_below="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Win"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00BC76"
+            />
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/i3"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/collectButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bg3"
+            android:text="Collect"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:elevation="10dp"
+        android:layout_marginBottom="20dp"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/below_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="@drawable/button_bg4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earn 0.02 Per Install"
+                android:textColor="#fff"
+                />
+            <Button
+                android:id="@+id/offerInstallButtonId"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:textColor="#00C972"
+                android:text="Install"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#fff"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/offerCountDown"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="Bonous Expire In 0s"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

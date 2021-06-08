@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoJobActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back_icon"
+                android:tint="#000"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@+id/mainToolbarId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginTop="15dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/captha"
+                            android:layout_gravity="center_horizontal"
+                            />
+                        <TextView
+                            android:layout_marginBottom="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="Video Job"
+                            android:textColor="#BEBEBE"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                   android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="8dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Video Job"
+                                android:textColor="#FFC400"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                />
+
+                            <ImageView
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/video"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <Button
+                                android:minWidth="80dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/button_bg2"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="10dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                       android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Video Job"
+                                android:textAlignment="center"
+                                android:textColor="#FFC400"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="25dp"
+                                android:src="@drawable/video" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/button_bg2"
+                                android:minWidth="80dp"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                   android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Video Job"
+                                android:textColor="#FFC400"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                />
+
+                            <ImageView
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/video"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <Button
+                                android:minWidth="80dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/button_bg2"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginBottom="15dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                       android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Video Job"
+                                android:textAlignment="center"
+                                android:textColor="#FFC400"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="25dp"
+                                android:src="@drawable/video" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/button_bg2"
+                                android:minWidth="80dp"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                   android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                       android:id="@+id/card5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Video Job"
+                                android:textColor="#FFC400"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                />
+
+                            <ImageView
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/video"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <Button
+                                android:minWidth="80dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/button_bg2"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginBottom="15dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card6"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                       android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Video Job"
+                                android:textAlignment="center"
+                                android:textColor="#FFC400"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="25dp"
+                                android:src="@drawable/video" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/button_bg2"
+                                android:minWidth="80dp"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                   android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card7"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Video Job"
+                                android:textColor="#FFC400"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                />
+
+                            <ImageView
+                                android:layout_marginBottom="25dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/video"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <Button
+                                android:minWidth="80dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/button_bg2"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginBottom="15dp"
+                                />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card8"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp"
+                       android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Video Job"
+                                android:textAlignment="center"
+                                android:textColor="#FFC400"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="25dp"
+                                android:src="@drawable/video" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/button_bg2"
+                                android:minWidth="80dp"
+                                android:text="Watch Now"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
